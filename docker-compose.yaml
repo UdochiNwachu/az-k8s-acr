@@ -3,6 +3,13 @@ version: "3"
 services:
   azure-vote-back:
     image: mcr.microsoft.com/oss/bitnami/redis:6.0.8
+    version: '3'
+services: 
+  mysql:
+    image: mysql
+    platform: linux/amd64
+    ports:
+    ...
     container_name: azure-vote-back
     environment:
       ALLOW_EMPTY_PASSWORD: yes
